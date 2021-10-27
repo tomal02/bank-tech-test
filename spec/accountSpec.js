@@ -9,4 +9,9 @@ describe('Bank account', function () {
     account.deposit(10);
     expect(account.balance).toBe(10);
   });
+  it('can be withdrawn from', function () {
+    account.deposit(6);
+    account.withdraw(5);
+    expect(account.balance).toBe(1);
+  });
 });
