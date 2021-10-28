@@ -5,6 +5,6 @@ describe('Account statement', function () {
   });
   it('can outputs the correct headers', function () {
     statement._outputHeader();
-    expect(console.log).toHaveBeenCalledWith('DATE | AMOUNT | BALANCE');
+    expect(console.log).toHaveBeenCalledWith('DATE | AMOUNT | BALANCE\n');
   });
 });
